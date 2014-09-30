@@ -9,4 +9,4 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN echo "deb http://ftp.us.debian.org/debian wheezy-backports main" >> /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get -y upgrade
-RUN apt-get install -y make g++ ruby-full nodejs ca-certificates
+RUN apt-get install -y make g++ ruby-full nodejs ca-certificates libmysqlclient-dev
